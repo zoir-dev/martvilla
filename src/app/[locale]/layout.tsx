@@ -6,8 +6,8 @@ import { ThemeLayout } from "@/layouts/theme-layout";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "MartVilla",
-    description: "MartVilla",
+    title: "Prime Haven Properties",
+    description: "Dubaydagi hashamatli ko'chmas mulkning ishonchli hamkori",
 };
 
 const questrial = Questrial({

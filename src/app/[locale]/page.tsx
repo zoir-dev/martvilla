@@ -3,7 +3,6 @@ import Brands from "@/components/brands";
 import Counter from "@/components/counter";
 import Featured from "@/components/featured";
 import Feeds from "@/components/feeds";
-import Filters from "@/components/filters";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
@@ -20,7 +19,6 @@ export default async function Home() {
             <Header />
             <div className="pt-16 max-w-7xl mx-auto px-4 pb-40">
                 <Hero />
-                <Filters />
                 <Invest />
                 <Speciality />
                 <Services />

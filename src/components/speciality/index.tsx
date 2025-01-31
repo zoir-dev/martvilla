@@ -1,52 +1,53 @@
+/* eslint-disable @next/next/no-img-element */
+import { getTranslations } from "next-intl/server";
 import Check from "../icons/check";
 import Layers from "../icons/layers";
 import Users from "../icons/users";
 
-const Speciality = () => {
+const Speciality = async () => {
+    const t = await getTranslations();
     return (
         <div className="pt-10 pb-16" id="about">
             <div className="flex flex-wrap gap-10">
                 <div className="flex-1 basis-[20rem]">
-                    <h1 className="sub-heading">about us</h1>
+                    <h1 className="sub-heading">{t("about us")}</h1>
                     <h1 className="heading">
-                        we specialize in quality home renovations
+                        {t(
+                            "Your trusted partner in luxury real estate in Dubai"
+                        )}
                     </h1>
-                    <p className="mt-3">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quo laborum earum saepe quibusdam, temporibus aut
-                        sapiente, ea alias libero, ipsam perferendis.
-                        Consectetur maiores, dicta, earum eaque facilis adipisci
-                        dignissimos optio fuga officia itaque quo impedit.
-                    </p>
+                    <p className="mt-3">{t("about_des")}</p>
                     <div className="mt-4">
                         <div className="flex-align-center gap-x-2">
                             <div className="icon-box text-primary !bg-primary/20">
                                 <Check />
                             </div>
-                            <p>Outstanding Property</p>
+                            <p>{t("Reliability")}</p>
                         </div>
                         <div className="mt-2 flex-align-center gap-x-2">
                             <div className="icon-box text-primary !bg-primary/20">
                                 <Check />
                             </div>
-                            <p>Professional and experienced human resource</p>
+                            <p>{t("Innovation")}</p>
                         </div>
                         <div className="mt-2 flex-align-center gap-x-2">
                             <div className="icon-box text-primary !bg-primary/20">
                                 <Check />
                             </div>
-                            <p>Provide the best services for users</p>
+                            <p>{t("Excellence in customer service")}</p>
                         </div>
                         <div className="mt-2 flex-align-center gap-x-2">
                             <div className="icon-box text-primary !bg-primary/20">
                                 <Check />
                             </div>
                             <p>
-                                Modern city locations and exceptional lifestyle
+                                {t(
+                                    "Modern city locations and exceptional lifestyle"
+                                )}
                             </p>
                         </div>
                         <button className="mt-4 btn btn-primary">
-                            read more
+                            {t("read more")}
                         </button>
                     </div>
                 </div>
@@ -60,8 +61,9 @@ const Speciality = () => {
                         <div className="absolute -bottom-10 sm:bottom-5 -left-2 md:-left-20">
                             <div className="p-3 bg-white rounded-lg shadow-md w-72 flex-center-between gap-x-3 dark:bg-dark-light">
                                 <h1>
-                                    We have been serving our customers for over
-                                    70 years
+                                    {t(
+                                        "We have been serving our customers for over 70 years"
+                                    )}
                                 </h1>
                                 <div className="icon-box text-primary !bg-primary/20">
                                     <Users />
@@ -69,8 +71,9 @@ const Speciality = () => {
                             </div>
                             <div className="p-3 mt-4 ml-8 bg-white rounded-lg shadow-md w-72 flex-center-between gap-x-3 dark:bg-dark-light">
                                 <h1>
-                                    Working with the symbol and reputation of
-                                    trustworthy trait
+                                    {t(
+                                        "Working with the symbol and reputation of trustworthy trait"
+                                    )}
                                 </h1>
                                 <div className="icon-box text-primary !bg-primary/20">
                                     <Layers />

@@ -41,7 +41,10 @@ export default function Header() {
                     className="flex-shrink-0 flex-align-center gap-x-1"
                 >
                     <House />
-                    <h1 className="hidden md:block">MartVilla</h1>
+                    <h1 className="hidden md:block leading-none">
+                        {" "}
+                        Prime Haven <br /> Properties
+                    </h1>
                 </Link>
                 <div className="flex-align-center gap-x-4">
                     <div className="hidden md:flex-align-center">

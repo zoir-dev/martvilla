@@ -1,9 +1,10 @@
+/* eslint-disable @next/next/no-img-element */
 import ArrowRight from "../icons/arrow-right";
 import HomeIcon from "../icons/home";
 
 const Invest = () => {
     return (
-        <div className="pt-10 pb-16">
+        <div className="pb-16">
             <div className="grid grid-cols-1 overflow-hidden rounded-lg sm:grid-cols-2 md:grid-cols-3">
                 <div className="md:col-span-1">
                     <img

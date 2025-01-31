@@ -4,8 +4,10 @@ import Facebook from "../icons/facebook";
 import Twitter from "../icons/twitter";
 import Instagram from "../icons/instagram";
 import Linkedin from "../icons/linkedin";
+import { getTranslations } from "next-intl/server";
 
-const Footer = () => {
+const Footer = async () => {
+    const t = await getTranslations();
     return (
         <div className="text-slate-200">
             <footer>
@@ -16,13 +18,15 @@ const Footer = () => {
                             className="flex-shrink-0 flex-align-center gap-x-1"
                         >
                             <Building />
-                            <h1 className="hidden md:block">MartVilla</h1>
+                            <h1 className="hidden md:block">
+                                Prime Haven Properties
+                            </h1>
                         </Link>
                         <div className="mt-3">
                             <p className="text-sm">
-                                Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Ab harum explicabo illo,
-                                magnam vitae expedita.
+                                {t(
+                                    "Your trusted partner in luxury real estate in Dubai"
+                                )}
                             </p>
                             <div className="gap-5 my-6 flex-center-center">
                                 <div className="icon-box bg-dark-light hover:bg-hover-color-dark">
@@ -69,16 +73,16 @@ const Footer = () => {
                         <h2 className="text-xl font-semibold">Quick Links</h2>
                         <ul>
                             <li className="my-3 text-muted">
-                                <a href="#"> About Us</a>
+                                <a href="#about">{t("About Us")}</a>
                             </li>
                             <li className="my-3 text-muted">
-                                <a href="#">Services</a>
+                                <a href="#services">{t("Services")}</a>
                             </li>
                             <li className="my-3 text-muted">
-                                <a href="#">Blog</a>
+                                <a href="#blog">{t("Blog")}</a>
                             </li>
                             <li className="my-3 text-muted">
-                                <a href="#">Portifolio</a>
+                                <a href="#projects">{t("Portfolio")}</a>
                             </li>
                         </ul>
                     </div>
@@ -125,13 +129,6 @@ const Footer = () => {
                     </div>
                 </div>
             </footer>
-            <div className="py-2 mt-3 text-center border-t text-muted border-dark">
-                <p>
-                    Created By{" "}
-                    <span className="text-primary">Kisakye Martha</span> | All
-                    Rights Reserved
-                </p>
-            </div>
         </div>
     );
 };
