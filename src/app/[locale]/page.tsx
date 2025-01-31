@@ -2,7 +2,6 @@ import BackToTopButton from "@/components/back-to-top";
 import Brands from "@/components/brands";
 import Counter from "@/components/counter";
 import Feeds from "@/components/feeds";
-import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
 import Invest from "@/components/invest";
@@ -15,7 +14,7 @@ export default async function Home() {
     return (
         <div>
             <Header />
-            <div className="pt-16 max-w-7xl mx-auto px-4 pb-40">
+            <div className="pt-16 max-w-7xl mx-auto px-4 pb-20">
                 <Hero />
                 <Invest />
                 <Speciality />
@@ -25,10 +24,11 @@ export default async function Home() {
                 <Brands />
                 <Feeds />
             </div>
-            <div className="px-[2%] md:px-[6%] bg-card-dark border border-card-dark">
+            <div>
                 <NewsLetter />
-                <div className="mt-20">
-                    <Footer />{" "}
+                <div className=" text-center p-1">
+                    <p>@ Copyright 2025 PHP - All rights reserved</p>
+                    {/* <Footer />{" "} */}
                 </div>
             </div>
             <BackToTopButton />
