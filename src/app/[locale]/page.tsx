@@ -1,14 +1,12 @@
 import BackToTopButton from "@/components/back-to-top";
 import Brands from "@/components/brands";
 import Counter from "@/components/counter";
-import Featured from "@/components/featured";
 import Feeds from "@/components/feeds";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
 import Invest from "@/components/invest";
 import NewsLetter from "@/components/newslatter";
-import Projects from "@/components/projects";
 import Services from "@/components/services";
 import Speciality from "@/components/speciality";
 import Testimonial from "@/components/testimonials";
@@ -22,9 +20,7 @@ export default async function Home() {
                 <Invest />
                 <Speciality />
                 <Services />
-                <Featured />
                 <Counter />
-                <Projects />
                 <Testimonial />
                 <Brands />
                 <Feeds />

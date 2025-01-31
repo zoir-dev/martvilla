@@ -1,17 +1,17 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
 import { Link } from "@/i18n/routing";
-import ArrowRight from "../icons/arrow-right";
+import { getTranslations } from "next-intl/server";
 
-const SingleFeedCardGrid = ({
+const SingleFeedCardGrid = async ({
     id,
     title,
-    date_posted,
     image,
     category,
-    author,
     description,
 }: any) => {
+    const t = await getTranslations();
     return (
         <div className="flex flex-col gap-3 sm:flex-row group">
             <div className="relative flex-shrink-0">
@@ -35,17 +35,7 @@ const SingleFeedCardGrid = ({
                         {title}
                     </h1>
                 </Link>
-                <p className="mt-3 text-sm uppercase opacity-60">
-                    by {author?.name}: {date_posted}
-                </p>
-                <p className="mt-2">{description.slice(0, 200)}...</p>
-                <Link
-                    href=""
-                    className="mt-4 flex-align-center gap-x-2 hover:underline text-primary"
-                >
-                    <span className="uppercase hover:underline">read more</span>{" "}
-                    <ArrowRight />
-                </Link>
+                <p className="mt-2">{t(description)}</p>
             </div>
         </div>
     );

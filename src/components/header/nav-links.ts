@@ -12,15 +12,11 @@ export const navLinks=[
         path:"#services",
     },
     {
-        name:"Our projects",
-        path:"#projects",
+        name:"Our team",
+        path:"#team",
     },
     {
-        name:"Brands",
-        path:"#brands",
-    },
-    {
-        name:"Blog post",
-        path:"#blog",
+        name:"Contact",
+        path:"#contact",
     }
 ]
