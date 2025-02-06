@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { getTranslations } from "next-intl/server";
 
 const Brands = async () => {

@@ -1,6 +1,5 @@
 import "../globals.css";
 import { NextIntlClientProvider } from "next-intl";
-import { Questrial } from "next/font/google";
 import { getMessages } from "next-intl/server";
 import { ThemeLayout } from "@/layouts/theme-layout";
 import { Metadata } from "next";
@@ -9,11 +8,6 @@ export const metadata: Metadata = {
     title: "Prime Haven Properties",
     description: "Dubaydagi hashamatli ko'chmas mulkning ishonchli hamkori",
 };
-
-const questrial = Questrial({
-    subsets: ["latin"],
-    weight: "400",
-});
 
 export default async function RootLayout({
     children,
@@ -26,7 +20,7 @@ export default async function RootLayout({
     const messages = await getMessages();
     return (
         <html lang={locale} suppressHydrationWarning>
-            <body className={questrial.className}>
+            <body>
                 <ThemeLayout
                     attribute="class"
                     defaultTheme="system"

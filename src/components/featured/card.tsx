@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import CardHoverIcons from "./card-hover-icons";
 import CardLabels from "./card-label";

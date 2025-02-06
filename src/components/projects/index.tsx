@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Link } from "@/i18n/routing";
 
 const Projects = () => {

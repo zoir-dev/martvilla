@@ -2,11 +2,11 @@
   "name": "martvilla",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev --turbopack",
+  "homepage": "http://primehavenproperties.com/",
+   "scripts": {
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
     "next": "15.1.6",
