@@ -3,7 +3,7 @@ import House from "../icons/house";
 import { Link } from "@/i18n/routing";
 import { navLinks } from "./nav-links";
 import ThemeSwitcher from "./theme-switcher";
-import LangSwitcher from "./lang-switcher";
+// import LangSwitcher from "./lang-switcher";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 import Menu from "../icons/menu";
@@ -94,7 +94,7 @@ export default function Header() {
                         </ul>
                     </div>
 
-                    <LangSwitcher />
+                    {/* <LangSwitcher /> */}
                     <ThemeSwitcher />
                     <div
                         className="bg-white shadow-md icon-box dark:bg-dark-light hover:shadow-lg hover:bg-transparent md:hidden"
