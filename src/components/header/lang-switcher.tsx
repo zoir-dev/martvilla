@@ -1,15 +1,16 @@
 "use client";
-import { usePathname, useRouter } from "@/i18n/routing";
+// import { usePathname, useRouter } from "@/i18n/routing";
 import { useLocale } from "next-intl";
 import React from "react";
 
 export default function LangSwitcher() {
-    const pathname = usePathname();
-    const router = useRouter();
+    // const pathname = usePathname();
+    // const router = useRouter();
     const locale = useLocale();
 
     function changeLang(lang: string) {
-        router.replace({ pathname }, { locale: lang });
+        console.log(lang);
+        // router.replace({ pathname }, { locale: lang });
     }
     return (
         <select
